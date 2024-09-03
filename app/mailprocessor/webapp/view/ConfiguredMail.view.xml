@@ -1,0 +1,49 @@
+<mvc:View xmlns:core="sap.ui.core"  
+          controllerName="com.mailprocessor.controller.ConfiguredMail"
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          xmlns:smartList="sap.ui.comp.smartlist">
+    <Panel id="panel" class="sapUiTinyMargin" headerText="Configured Mails" width="98%">
+        <!-- Define the Table -->
+        <Table id="emailTable" 
+               items="{/EmailConfiguration}" 
+               alternateRowColors="true"
+               width="100%">
+            <!-- Define Columns in Desired Order -->
+            <columns>
+               
+                <Column>
+                    <Text text="Email" />
+                </Column>
+                
+                <Column>
+                    <Text text="Host Name" />
+                </Column>
+                <Column>
+                    <Text text="Port" />
+                </Column>
+                <Column>
+                    <Text text="Connection Security" />
+                </Column>
+                <Column>
+                    <Text text="Polling Frequency" />
+                </Column>
+            </columns>
+            
+            <!-- Define List Item Template -->
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <!-- Data Binding in the New Order -->
+                        
+                        <Text text="{emailId}" />
+                        <Text text="{hostName}" />
+                        <Text text="{port}" />
+                        <Text text="{connectionSecurity}" />
+                        <Text text="{pollingFrequency}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Panel>
+</mvc:View>

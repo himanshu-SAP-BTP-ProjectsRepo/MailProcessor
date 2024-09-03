@@ -1,0 +1,15 @@
+<mvc:View xmlns:taccount="sap.suite.ui.commons.taccount" controllerName="com.mailprocessor.controller.HomeDetail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    >
+    <Panel id="panel" class="sapUiTinyMargin" width="98%">
+		<Image id="_IDGenImage1"  src="./images/incresolimage.jpg" alt="Image" height="450px" width="900px" />
+	  </Panel>
+    <Panel id="panel2"  class="sapUiSmallMargin" >
+    <HBox justifyContent="Center">
+    <Button id="_IDGenButton1" text="Sign In" type="Emphasized"  press="handlePopoverPress"></Button>
+    <Button id="_IDGenButton2" text="Register" class="sapUiTinyMarginBegin" type="Emphasized" press="onPressRegister"></Button>
+      </HBox>
+    </Panel>
+            
+</mvc:View>

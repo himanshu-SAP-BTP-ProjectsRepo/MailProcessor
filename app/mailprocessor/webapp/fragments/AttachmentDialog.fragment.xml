@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                          xmlns="sap.m">
+    <Dialog id="attachmentDialog" title="Attachments" endButton="{/closeDialog}">
+         <List id="attachmentList" items="{/Attachments}">
+                    <items>
+                        <StandardListItem
+                            title="{filename}"
+                            type="Navigation"
+                            press="onAttachmentPress"/>
+                    </items>
+                </List>
+    </Dialog>
+</core:FragmentDefinition>

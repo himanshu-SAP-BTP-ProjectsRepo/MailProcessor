@@ -1,0 +1,71 @@
+<mvc:View
+    controllerName="com.mailprocessor.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    displayBlock="true"
+>
+    <tnt:NavigationList id="navList">
+        <!-- <tnt:NavigationListItem
+            id="navHome"
+            text="Home"
+            icon="sap-icon://home"
+            key="home"
+            select="onHomeSelect"
+        /> -->
+
+        <!-- <tnt:NavigationListItem
+            id="navOrgMgmt"
+            text="Organization Management"
+            icon="sap-icon://offsite-work"
+            key="orgmanagement"
+            select="onOrgSelect"
+        /> -->
+
+        <tnt:NavigationListItem
+            id="navEmailAccountsConfig"
+            text="Email Accounts Configuration"
+            icon="sap-icon://customer-and-contacts"
+            key="emailAccountsConfig"
+            select="onEmailConfigSelect"
+        />
+
+        <tnt:NavigationListItem
+            id="navEmailReader"
+            text="Email Reader"
+            icon="sap-icon://email"
+            key="emailReader"
+            select="onEmailReaderPress"
+        >
+            <tnt:NavigationListItem
+                id="navEmailReaderLogs"
+                text="Email Reader Logs"
+                icon="sap-icon://inspect"
+                key="emailReaderLogs"
+                select="onEmailReaderLog"
+            />
+            <tnt:NavigationListItem
+                id="navMailBox"
+                text="Mail Box"
+                icon="sap-icon://email-read"
+                key="mailBox"
+                select="onMailBox"
+            />
+
+            <tnt:NavigationListItem
+                id="navMailProcessor"
+                text="Mail Processor"
+                icon="sap-icon://process"
+                key="mailProcessor"
+                select="onEmailProcessor"
+            />
+        </tnt:NavigationListItem>
+
+        <tnt:NavigationListItem
+            id="navInvoiceApp"
+            text="Invoice App"
+            icon="sap-icon://receipt"
+            key="invoiceApp"
+        />
+    </tnt:NavigationList>
+</mvc:View>

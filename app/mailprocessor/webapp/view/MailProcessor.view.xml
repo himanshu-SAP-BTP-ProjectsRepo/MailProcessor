@@ -1,0 +1,17 @@
+<mvc:View xmlns:core="sap.ui.core"  
+          controllerName="com.mailprocessor.controller.MailProcessor"
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+        xmlns:smartList="sap.ui.comp.smartlist"
+>
+    <Panel id="panel" class="sapUiTinyMargin" headerText="Email Processor" width="98%">
+     <!-- <smartList:SmartList id="ItemsST" entitySet="LineItemsSet" header="Processed Mails based on Configuration Keywords "
+				showRowCount="true"  enableAutoBinding="true"
+				>
+				<smartList:listItemTemplate>
+					<StandardListItem 
+						 />
+				</smartList:listItemTemplate>
+			</smartList:SmartList> -->
+    </Panel>
+</mvc:View>

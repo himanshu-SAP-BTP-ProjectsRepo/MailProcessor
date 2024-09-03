@@ -1,0 +1,47 @@
+GET http://localhost:37921/odata/v4/mail-reader/Attachments
+
+
+####
+POST http://localhost:45769/odata/v4/mail-reader/EmailConfiguration
+Content-Type: application/json
+
+{
+  
+  "fullName": "Olivia Martinez",
+  "emailId": "olivia.martinez@example.com",
+  "password": "SecureP@ssw0rd",
+  "protocol": "IMAP",
+  "authenticationMethod": "OAuth2",
+  "port": 993,
+  "connectionSecurity": "SSL",
+  "hostName": "imap.securemail.com",
+  "pollingFrequency": 20,
+  "keywords": ["alerts", "updates"],
+  "markRead": true
+}
+
+###
+POST http://localhost:34539/odata/v4/mail-reader/SelectedMail
+Content-Type: application/json
+
+{
+  "useremail": "himanshu.prakash@incresol.com",
+  "password": "drkz rkap womm gcgb",
+  "port": 993,
+  "host": "imap.gmail.com",
+   "tls": true
+}
+###
+DELETE  http://localhost:34539/odata/v4/mail-reader/SelectedMail(useremail='himanshu.prakash@incresol.com')
+
+
+
+###
+
+###
+
+DELETE  http://localhost:33201/odata/v4/mail-reader/EmailData/*
+
+
+
+
